@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: linear-gradient(rgba(238, 170, 181, 0.4),rgba(248, 194, 203,0.4)), url(bg_cake.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav {
+    flex: 1;
+    text-align: center;
+}
+
+.nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-inline: 30px;
+    position: relative;
+}
+
+.nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(146, 9, 61);
+    font-weight: 700;
+}
+
+.nav ul li a::after{
+    content: '';
+    color: black;
+    width: 0%;
+    height: 2.5px;
+    background: rgb(146, 9, 61);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+.head {
+    color: white;
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.bakery {
+    margin-top: 0;
+    padding-bottom: 50px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(247, 205, 212);
+}
+
+.maindiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 50%;
+    height: auto;
+}
+
+.mainh1 {
+    text-align: center;
+    color: rgb(206, 60, 116);
+    margin-bottom: 0px;
+    font-size: 60px;
+}
+
+.mainp {
+    color: grey;
+    text-align: center;
+    margin-top: 0;
+    font-size: 25px
+}
+
+.link {
+    text-align: center;  
+}
+
+.link a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(206, 60, 116);
+    border: 1px solid rgb(252, 212, 218);
+    padding: 6px 12px;
+    background: rgb(252, 212, 218);
+}
+
+.link a:hover {
+    background: rgb(206, 60, 116);
+    color: white;
+}
+
+
+
+.footer {
+    background-color: pink;
+}
+
+.socials {
+    color: rgb(206, 60, 116);
+    padding: 8px;
+    font-size: 40px;
+    margin: 4px;
+}
+
+.app {
+    width: 50px;
+    padding: 8px;
+}
+
+@media(max-width: 700px){
+    .head {
+        font-size: 55px;
+    }
+
+    .nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding-inline: 3px;
+        position: relative;
+    }
+
+    .nav ul li a {
+        font-size: 12px;
+        text-decoration: none;
+        color: rgb(146, 9, 61);
+        font-weight: 700;
+    }
+
+    .mainh1 {
+        font-size: 20px;
+    } 
+
+    .mainp {
+        font-size: 12px;
+    }
+
+    .link {
+        font-size: 15px;
+        text-align: center;
+        padding: 5px 8px;
+    }
+
+    .link {
+        text-align: center;  
+    }
+    
+    .link a {
+        font-size: 12px;
+        text-decoration: none;
+        color: rgb(247, 10, 101);
+        border: 1px solid rgb(252, 212, 218);
+        padding: 4px 8px;
+        background: rgb(252, 212, 218);
+    }
+    
+    .link a:hover {
+        background: rgb(206, 60, 116);
+        color: white;
+    }
+
+    .socials {
+        color: rgb(206, 60, 116);
+        padding: 7px;
+        font-size: 25px;
+        margin: 2px;
+    }
+
+    .app {
+        width: 25px;
+        padding: 6px;
+    }
+}
